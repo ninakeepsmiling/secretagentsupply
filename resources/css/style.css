@@ -1,0 +1,61 @@
+html {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.flexbox {
+  display: flex;
+}
+body {
+font-family: Helvetica;
+}
+/*have to give 960px for the body contents*/
+/*Header banner styling*/
+.flexbox.headerlogo img{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+.flexbox.headerlogo {
+  align-items: center;
+}
+.flexbox.headerlogo h1 {
+  margin: 0.66rem 0rem;
+  font-size: 1rem;
+}
+/*New arrival banner styling*/
+.flexbox.banner {
+  height: 25rem;
+  background-image: url("../moto.jpeg");
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+}
+.flexbox.banner .newarrival {
+  background-color: black;
+  width: 20rem;
+  font-weight: bold;
+  margin-top: 9rem;
+  padding: 2rem 0rem 2rem 3rem;
+}
+.flexbox.banner .newarrival h2 {
+  font-size: 1rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+.flexbox.banner .newarrival h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+/*nav styling*/
+nav{
+  background-color: firebrick;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0.75rem 0rem;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Gadgets flexbox display*/
