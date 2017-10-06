@@ -96,3 +96,84 @@ nav a {
   text-align: center;
   padding: 0.5em;
 }
+/* Business style */
+.business-info {
+  display: flex;
+  justify-content: space-between;;
+  margin: 3rem 0 0 0;
+}
+.info {
+  width: 35%;
+}
+.title {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+  display: block;
+}
+footer {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin-top: 4rem;
+  background-color: black;
+  color: white;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+  .info {
+    width: 35%;
+  }
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .newarrival {
+    top: 10rem;
+    position: relative;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .newarrival h4 {
+    font-size: 0.77rem;
+  }
+  .newarrival h1 {
+    font-size: 1rem;
+  }
+  .product {
+    width: 90%;
+  }
+  .product.glasses {
+    display: none;
+  }
+  .product.watch {
+    display: none;
+  }
+  .business-info {
+    display: block;
+  }
+  .info {
+    width: 90%;
+  }
+  .main-banner {
+    height: 15rem;
+  }
+}
