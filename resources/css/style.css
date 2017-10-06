@@ -1,61 +1,98 @@
 html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* Header Style*/
+.company {
   background-color: black;
   color: white;
-  font-size: 18px;
 }
-.flexbox {
-  display: flex;
-}
-body {
-font-family: Helvetica;
-}
-/*have to give 960px for the body contents*/
-/*Header banner styling*/
-.flexbox.headerlogo img{
+.company img {
   height: 1.5rem;
-  padding-left: 0.5rem;
   padding-right: 1rem;
+  padding-left: 0.5rem;
 }
-.flexbox.headerlogo {
-  align-items: center;
-}
-.flexbox.headerlogo h1 {
-  margin: 0.66rem 0rem;
+.company span {
   font-size: 1rem;
+  padding: inherit: 0.66rem 0rem;
 }
-/*New arrival banner styling*/
-.flexbox.banner {
-  height: 25rem;
+.company
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* Main banner style*/
+.main-banner {
   background-image: url("../moto.jpeg");
+  height: 25rem;
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  align-items: center;
+  background-position: center;
 }
-.flexbox.banner .newarrival {
+.newarrival {
+  top: 9rem;
   background-color: black;
+  color: white;
   width: 20rem;
-  font-weight: bold;
-  margin-top: 9rem;
-  padding: 2rem 0rem 2rem 3rem;
+  position: relative;
+  padding: 2rem 3rem;
+  line-height: 1.25;
 }
-.flexbox.banner .newarrival h2 {
+.newarrival h4 {
   font-size: 1rem;
-  padding: 0rem;
-  margin: 0rem;
+  font-weight: bold;
 }
-.flexbox.banner .newarrival h1 {
+.newarrival h1 {
   font-size: 2rem;
-  padding-top: 0.25rem;
+  font-weight: bold;
+  margin: 0.25rem 0rem;
 }
-/*nav styling*/
-nav{
+/* Nav style*/
+nav {
   background-color: firebrick;
-  text-align: center;
+  display: block;
+}
+nav ul {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 0rem;
+  padding: 0.75em 0;
+  list-style: none;
 }
 nav a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
-/* Gadgets flexbox display*/
+/*Product style*/
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+.product {
+  width: 30%;
+}
+.product-image {
+  border: 4px solid black;
+  padding: 2rem 0;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image img {
+  max-width: 8em;
+}
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
